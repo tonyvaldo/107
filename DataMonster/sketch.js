@@ -55,10 +55,6 @@ function draw() {
         var mouthLeft = createVector(positions[44][0], positions[44][1]);
         var mouthRight = createVector(positions[50][0], positions[50][1]);
         var smile = mouthLeft.dist(mouthRight);
-      
-        // line shows a bar showing smiling amount
-        rect(20, 20, smile * 3, 20);
-
   
     }
  
