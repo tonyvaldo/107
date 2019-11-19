@@ -1,0 +1,198 @@
+
+h1 {
+  color: ##E6E6FA;
+  padding: 20px 0px 10px 0px;
+}
+h2 {
+  color: #d7b6e3;
+  padding: 20px 0px 10px 0px;
+}
+/* This changes color and removes default underline in links  */
+a {
+color: #DA70D6;
+text-decoration: none;
+}
+
+/* Centers images */
+
+img {
+  display: block;
+  margin: 0px auto;
+  width: 100%;
+}
+
+h1 {
+  border-bottom: 1px solid grey;
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-size: 62.5%;
+  font-style: Digital;
+}
+
+.animation-box {
+  width: 75%;
+  height: 27.5rem;
+  background-color: blue;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.animation-container {
+  width: 1000rem;
+  height: 30rem;
+}
+
+@keyframes topFadeOut {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    top: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bottomFadeOut {
+  0% {
+    position: absolute;
+    bottom: -5rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    bottom: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+}
+
+@keyframes topFadeOutVertical {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    top: 45%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rightFadeInOut {
+  0% {
+    position: absolute;
+    right: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    right: 10rem;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    right: 10rem;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+.welcome-text {
+  font-size: 7.4rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 1rem;
+  opacity: 0;
+  animation-name: topFadeOut;
+  animation-duration: 7s ;
+  color: white;
+}
+
+.first-text {
+  font-size: 7.4rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 5rem;
+  opacity: 0;
+  animation-name: rightFadeInOut;
+    animation-delay: 8s;
+  animation-duration: 10s;
+  color: white;
+}
+
+.second-text {
+  font-size: 5.4rem;
+  position: absolute;
+  top: 8.5rem;
+  opacity: 0;
+  animation-name: rightFadeInOut;
+  animation-delay: 18s;
+  animation-duration: 10s;
+  color: #ccc;
+}
+
+.third-text {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 10.5rem;
+  left: 10%;
+  opacity: 0;
+  color: #F0EBA3;
+  animation-name: fadeInOut;
+  animation-delay: 25s;
+  animation-duration: 9s;
+}
+
+.fourth-text {
+  font-size: 5rem;
+  position: absolute;
+  left: 5%;
+  bottom: 25%;
+  opacity: 0;
+  color: #F0A3BE;
+  animation-name: bottomFadeOut;
+  animation-delay: 27s;
+  animation-duration: 22s;
+}
